@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Weather</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="center">
+        <label for="city">City Name</label>
+        <input type="text" name="city" id="scity">
+        <br>
+        <label for="pin">Enter pin Code</label>
+        <input type="number" name="pin" id="pin">
+        <button onclick="ch()">Search</button>
+    </div>
+
+    <div>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-4 col-sm-12 col-xs-12">
+                    <div class="card p-4">
+                        <div class="d-flex">
+                            <div class="flex-grow-1" id="city">City</div>
+                        </div>
+                        <div class="d-flex flex-column temp mt-5 mb-3">
+                            <h1 class="mb-0 font-weight-bold heading" id="temp"> 00°C </h1> <span
+                                class="small grey" id="disc">clouds</span>
+                        </div>
+                        <div class="d-flex">
+                            <div class="temp-details flex-grow-1">
+                                <p class="my-1"> <img src="./w_img/wind.png" height="17px"> <span id="wind_sp"> 00 km/h </span> </p>
+                                <p class="my-1"> <i class="fa fa-tint mr-2" aria-hidden="true"></i> <span id="perc"> 00% </span>
+                                </p>
+                                <p class="my-1">
+                                     <img src="./w_img/hum.png" height="17px"> 
+                                     <span id="hum"> 00h
+                                    </span> 
+                                </p>
+                            </div>
+                            <div id="icon" width="100px">  </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
